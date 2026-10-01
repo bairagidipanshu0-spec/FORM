@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css learning</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <style>
+            .a{
+                width: 520px;
+                height: 445px;
+                background-image: -webkit-linear-gradient(top,#3b3b3b,#373737);
+                margin: 180px auto;
+                position: relative;
+            }
+            .create{
+                height: 77px;
+                border-bottom: 5px solid #1b1b1b;
+                color: #fff;
+                text-align: center;
+                line-height: 77px;
+                font-size: 2em;
+                font-family: Arial, Helvetica, sans-serif;
+                text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.8);
+                margin-bottom: 50px;
+            }
+            .box> input{
+                display: block;
+                width: 89%;
+                padding: 0px 30px;
+                height: 38px;
+                margin: 14px auto;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 0px 1px 1px 1px #5b595a;
+                font-size: 1em;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+                outline: none;
+            }
+            .tnc{
+                color: white;
+            }
+            .box{
+                padding: 0px 15px;
+            }
+            .tnc a{
+                color: #6a7620;
+            }
+            input[type="submit"]{
+                color: azure;
+                font-size: 1.5em;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                display: block;
+                width: 250px;
+                height: 48px;
+                border-radius: 40px;
+                border: none;
+                float: right;
+                background-image: -webkit-linear-gradient(top,#909419,#717c00);
+                margin-right: 10px;
+                text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.8);
+                box-shadow: 0px -1px 0px 0px #b4bd2c;
+            }
+            .box input:nth-child(1){
+                background-image: url(./USER1.png);
+                background-repeat: no-repeat;
+                background-position: 3px center;
+            }
+            .box input:nth-child(2){
+                background-image: url(./PHONE.jpg);
+                background-repeat: no-repeat;
+                background-position: 3px center;
+            }
+            .box input:nth-child(3){
+                background-image: url(./EMAIL.jpg);
+                background-repeat: no-repeat;
+                background-position: 3px center;
+            }
+            .box input:nth-child(4){
+                background-image: url(./PASS.jpg);
+                background-repeat: no-repeat;
+                background-position: 3px center;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="a">
+            <div class="create"> Create an Account</div>
+            <div class="box">
+                <input type="text" name="name" value="" placeholder="Name">
+                <input type="number" name="phone" value="" placeholder="Phone Number">
+                <input type="email" name="email" value="" placeholder="Email">
+                <input type="password" name="password" value="" placeholder="Password">
+                <p class="tnc" ><input type="checkbox" name="tnc" value="agree"> I agree to the <a href="#"> Terms and  Conditions</a> and <a href="#"> Privacy policy</a></p>
+            </div>
+            <input type="submit" name="submit" value="Create Account" placeholder="Create Account">
+        </form>
+    </body>
+</html>
